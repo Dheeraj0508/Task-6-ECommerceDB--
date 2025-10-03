@@ -1,0 +1,31 @@
+SQL TASK 6 — INTERVIEW QUESTIONS (THEORETICAL)
+
+1. What is a subquery?
+A subquery is a query nested inside another SQL query. It returns data used by the main query for filtering, comparison, or calculation.
+
+2. Difference between subquery and join?
+A subquery runs independently and returns a result used by the outer query. A join combines rows from two or more tables based on a related column. Joins are often more efficient for combining data, while subqueries are better for filtering or calculating.
+
+3. What is a correlated subquery?
+A correlated subquery refers to columns from the outer query and runs once for each row processed by the outer query. It cannot run independently.
+
+4. Can subqueries return multiple rows?
+Yes, subqueries can return multiple rows when used with operators like IN, EXISTS, or in the FROM clause. However, scalar subqueries must return only one value.
+
+5. How does EXISTS work?
+EXISTS checks whether a subquery returns any rows. If it does, the condition is true. It’s commonly used to test for the existence of related data.
+
+6. How is performance affected by subqueries?
+Subqueries, especially correlated ones, can slow down performance because they may execute multiple times. Using joins or indexing can improve efficiency.
+
+7. What is scalar subquery?
+A scalar subquery returns a single value (one row, one column). It’s often used in SELECT or WHERE clauses for comparison or calculation.
+
+8. Where can we use subqueries?
+Subqueries can be used in SELECT, WHERE, FROM, and HAVING clauses. They help filter data, calculate values, or create temporary result sets.
+
+9. Can a subquery be in FROM clause?
+Yes, subqueries can be used in the FROM clause. These are called derived tables and act like temporary tables that can be joined or queried further.
+
+10. What is a derived table?
+A derived table is a subquery placed in the FROM clause. It returns a temporary result set that can be treated like a regular table in the outer query.
